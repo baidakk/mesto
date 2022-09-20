@@ -10,3 +10,18 @@
     row-gap: 20px;
     border: 1px solid yellow;
 }
+
+@media screen and (max-width: 880px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .cards {
+        margin-top: 36px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+  }

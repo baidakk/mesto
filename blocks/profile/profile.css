@@ -1,4 +1,4 @@
-.profile {
+/* .profile {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -7,4 +7,23 @@
     padding: 0;
     margin: 40px auto 0;
     border: 1px solid red;
+} */
+
+.profile {
+    padding: 0;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 120px 1fr 150px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 321px) {
+    .profile {
+        padding: 0 19px 0;
+        grid-template-columns: 282px;
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+    }
 }
