@@ -6,7 +6,7 @@
 
 ### GitHub Pages 
 
-[Ссылка GitHub Pages] (https://baidakk.github.io/mesto/)
+[Ссылка GitHub Pages](https://baidakk.github.io/mesto/)
 
 **Технологии**
 * HTML;
