@@ -1,4 +1,4 @@
-![Mesto::Russia](../images/md-cover.jpg)
+![Mesto::Russia](../mesto/images/md_cover.png)
 
 # Сервис "Место"
 
