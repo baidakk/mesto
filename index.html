@@ -13,7 +13,7 @@
         <img class="header__logo" src="../mesto/images/mesto_logo.svg" alt="" />
       </header>
       <main>
-        <div class="profile">
+        <section class="profile">
           <img
             src="../mesto/images/Jacques-Yves-Cousteau.jpg"
             alt=""
@@ -31,19 +31,16 @@
             <p class="profile__description">Исследователь океана</p>
           </div>
           <div class="profile__add-button">
-            <img src="../mesto/images/plus_icon.svg" alt="">
+            <img src="../mesto/images/plus_icon.svg" alt="" />
           </div>
-        </div>
-        <div class="cards">
+        </section>
+        <section class="cards">
           <div class="cards__element">
             <img class="cards__img" src="../mesto/images/karachaevsk.jpg" />
             <h3 class="cards__heading">Карачаевск</h3>
-            <img
-              class="cards__like-button"
-              src="../mesto/images/like_disabled.svg"
-              alt=""
-            />
-            <!-- здесь потом toggle иконок сделать -->
+            <div
+              class="cards__like-button cards__like-button_active cards__like-button_deactive"
+            ></div>
           </div>
           <div class="cards__element">
             <img
@@ -52,12 +49,9 @@
               alt="Гора Эльбрус"
             />
             <h3 class="cards__heading">Гора Эльбрус</h3>
-            <img
-              class="cards__like-button"
-              src="../mesto/images/like_disabled.svg"
-              alt=""
-            />
-            <!-- здесь потом toggle иконок сделать -->
+            <div
+              class="cards__like-button cards__like-button_active cards__like-button_deactive"
+            ></div>
           </div>
           <div class="cards__element">
             <img
@@ -66,12 +60,9 @@
               alt="Домбай"
             />
             <h3 class="cards__heading">Домбай</h3>
-            <img
-              class="cards__like-button"
-              src="../mesto/images/like_disabled.svg"
-              alt=""
-            />
-            <!-- здесь потом toggle иконок сделать -->
+            <div
+              class="cards__like-button cards__like-button_active cards__like-button_deactive"
+            ></div>
           </div>
           <div class="cards__element">
             <img
@@ -80,12 +71,9 @@
               alt="Гора Эльбрус"
             />
             <h3 class="cards__heading">Гора Эльбрус</h3>
-            <img
-              class="cards__like-button"
-              src="../mesto/images/like_disabled.svg"
-              alt=""
-            />
-            <!-- здесь потом toggle иконок сделать -->
+            <div
+              class="cards__like-button cards__like-button_active cards__like-button_deactive"
+            ></div>
           </div>
           <div class="cards__element">
             <img
@@ -94,12 +82,9 @@
               alt="Домбай"
             />
             <h3 class="cards__heading">Домбай</h3>
-            <img
-              class="cards__like-button"
-              src="../mesto/images/like_disabled.svg"
-              alt=""
-            />
-            <!-- здесь потом toggle иконок сделать -->
+            <div
+              class="cards__like-button cards__like-button_active cards__like-button_deactive"
+            ></div>
           </div>
           <div class="cards__element">
             <img
@@ -108,14 +93,11 @@
               alt="Карачаево-Черкеск"
             />
             <h3 class="cards__heading">Карачаево-Черкеск</h3>
-            <img
-              class="cards__like-button"
-              src="../mesto/images/like_disabled.svg"
-              alt=""
-            />
-            <!-- здесь потом toggle иконок сделать -->
+            <div
+              class="cards__like-button cards__like-button_active cards__like-button_deactive"
+            ></div>
           </div>
-        </div>
+        </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">
@@ -123,14 +105,13 @@
         </p>
       </footer>
       <section class="popup">
-        <!-- popup on: popup popup_opened -->
         <div class="popup__container">
           <img
             src="../mesto/images/Close Icon.svg"
             alt=""
             class="popup__close"
           />
-          <div class="popup__form">
+          <form class="popup__form">
             <h2 class="popup__heading">Редактировать профиль</h2>
             <fieldset class="popup__input-container">
               <input
@@ -151,7 +132,7 @@
               />
             </fieldset>
             <button class="popup__button">Сохранить</button>
-          </div>
+          </form>
         </div>
       </section>
     </div>
