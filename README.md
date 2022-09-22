@@ -1,12 +1,12 @@
+![Mesto::Russia](../images/md-cover.jpg)
+
 # Сервис "Место"
 
-### Обзор
-
-Сервис предназначен для хранения фотографий. 
+Сервис предназначен для хранения фотографий 
 
 ### GitHub Pages 
 
-* [Ссылка GitHub Pages] (https://baidakk.github.io/mesto/)
+[Ссылка GitHub Pages] (https://baidakk.github.io/mesto/)
 
 **Технологии**
 * HTML;
