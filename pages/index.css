@@ -18,8 +18,10 @@
 
 /* Elements */
 @import url(../blocks/cards/cards.css);
-@import url(../blocks/cards/__element/cards__element.css);
+@import url(../blocks/cards/__item/cards__item.css);
 @import url(../blocks/cards/__heading/cards__heading.css);
+@import url(../blocks/cards/__info/cards__info.css);
+@import url(../blocks/cards/__grid/cards__grid.css);
 @import url(../blocks/cards/__img/cards__img.css);
 @import url(../blocks/cards/__like-button/cards__like-button.css);
 @import url(../blocks/cards/__like-button/_active/cards__like-button_active.css);

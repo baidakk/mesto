@@ -1,8 +1,6 @@
 .cards__img {
     border-radius: 10px 10px 0px 0px;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: content-box;
+    width: 282px;
+    height: 282px;
+    object-fit: cover;
 }
