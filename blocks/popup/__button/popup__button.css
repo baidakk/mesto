@@ -16,3 +16,13 @@
     opacity: 0.8;
     transition: opacity .3s ease-out;
 }
+
+
+@media screen and (max-width: 644px) and (min-width: 320px) {
+    .popup__button {
+        height: 46px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+

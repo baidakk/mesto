@@ -4,6 +4,7 @@
     max-height: 24px;
     align-self: center;
     transform: translateY(-10px);
+    grid-area: name;
 }
 
 

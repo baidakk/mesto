@@ -7,13 +7,14 @@
     font-size: 42px;
     line-height: 48px;
     color: #FFFFFF;
+    grid-area: name;
 }
 
 @media screen and (max-width: 644px) and (min-width: 320px) {
     .profile__heading-name {
-        font-weight: 500;
         font-size: 27px;
         line-height: 33px;
         text-align: center;
+        margin-left: 15px;
     }
 }
