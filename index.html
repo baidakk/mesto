@@ -19,20 +19,16 @@
             alt=""
             class="profile__avatar"
           />
-          <div class="profile__info"> 
+          <div class="profile__info">
             <h1 class="profile__heading-name">Жак-Ив Кусто</h1>
-            <a href="#">
-              <img
-                src="./images/edit_button.svg"
-                alt=""
-                class="profile__edit-button"
-              />
-            </a>
+            <button
+              aria-label="Edit"
+              type="button"
+              class="profile__edit-button"
+            ></button>
             <p class="profile__description">Исследователь океана</p>
           </div>
-          <div class="profile__add-button">
-            <img src="./images/plus_icon.svg" alt="" />
-          </div>
+          <button aria-label="Add" class="profile__add-button"></button>
         </section>
         <section class="cards">
           <ul class="cards__grid">
@@ -44,9 +40,11 @@
               />
               <div class="cards__info">
                 <h2 class="cards__heading">Карачаевск</h2>
-                <div
+                <button
+                  aria-label="Like"
+                  type="button"
                   class="cards__like-button"
-                ></div>
+                ></button>
               </div>
             </li>
             <li class="cards__item">
@@ -57,22 +55,22 @@
               />
               <div class="cards__info">
                 <h2 class="cards__heading">Гора Эльбрус</h2>
-                <div
+                <button
+                  aria-label="Like"
+                  type="button"
                   class="cards__like-button"
-                ></div>
+                ></button>
               </div>
             </li>
             <li class="cards__item">
-              <img
-                class="cards__img"
-                src="./images/dombay.jpg"
-                alt="Домбай"
-              />
+              <img class="cards__img" src="./images/dombay.jpg" alt="Домбай" />
               <div class="cards__info">
                 <h2 class="cards__heading">Домбай</h2>
-                <div
+                <button
+                  aria-label="Like"
+                  type="button"
                   class="cards__like-button"
-                ></div>
+                ></button>
               </div>
             </li>
             <li class="cards__item">
@@ -83,22 +81,22 @@
               />
               <div class="cards__info">
                 <h2 class="cards__heading">Гора Эльбрус</h2>
-                <div
+                <button
+                  aria-label="Like"
+                  type="button"
                   class="cards__like-button"
-                ></div>
+                ></button>
               </div>
             </li>
             <li class="cards__item">
-              <img
-                class="cards__img"
-                src="./images/dombay.jpg"
-                alt="Домбай"
-              />
+              <img class="cards__img" src="./images/dombay.jpg" alt="Домбай" />
               <div class="cards__info">
                 <h2 class="cards__heading">Домбай</h2>
-                <div
+                <button
+                  aria-label="Like"
+                  type="button"
                   class="cards__like-button"
-                ></div>
+                ></button>
               </div>
             </li>
             <li class="cards__item">
@@ -109,9 +107,11 @@
               />
               <div class="cards__info">
                 <h2 class="cards__heading">Карачаево-Черкеск</h2>
-                <div
+                <button
+                  aria-label="Like"
+                  type="button"
                   class="cards__like-button"
-                ></div>
+                ></button>
               </div>
             </li>
           </ul>
@@ -124,12 +124,12 @@
       </footer>
       <section class="popup">
         <div class="popup__container">
-          <img
-            src="./images/close_icon.svg"
-            alt=""
+          <button
+            aria-label="Close"
+            type="submit"
             class="popup__close"
-          />
-          <form class="popup__form">
+          ></button>
+          <form name="edit__form" class="popup__form">
             <h2 class="popup__heading">Редактировать профиль</h2>
             <fieldset class="popup__input-container">
               <input
@@ -149,7 +149,7 @@
                 required
               />
             </fieldset>
-            <button class="popup__button">Сохранить</button>
+            <button type="submit" class="popup__button">Сохранить</button>
           </form>
         </div>
       </section>
