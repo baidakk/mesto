@@ -24,100 +24,20 @@
             <button
               aria-label="Edit"
               type="button"
-              class="profile__edit-button"
+              class="profile__edit-button js-popup-trigger"
+              data-target="popup1"
             ></button>
             <p class="profile__description">Исследователь океана</p>
           </div>
           <button
             aria-label="Add"
             type="button"
-            class="profile__add-button"
+            class="profile__add-button js-popup-trigger"
+            data-target="popup2"
           ></button>
         </section>
-        <section class="cards">
-          <ul class="cards__grid">
-            <li class="cards__item">
-              <img
-                class="cards__img"
-                src="./images/karachaevsk.jpg"
-                alt="Карачаевск"
-              />
-              <div class="cards__info">
-                <h2 class="cards__heading">Карачаевск</h2>
-                <button
-                  aria-label="Like"
-                  type="button"
-                  class="cards__like-button"
-                ></button>
-              </div>
-            </li>
-            <li class="cards__item">
-              <img
-                class="cards__img"
-                src="./images/gora_elbrus.jpg"
-                alt="Гора Эльбрус"
-              />
-              <div class="cards__info">
-                <h2 class="cards__heading">Гора Эльбрус</h2>
-                <button
-                  aria-label="Like"
-                  type="button"
-                  class="cards__like-button"
-                ></button>
-              </div>
-            </li>
-            <li class="cards__item">
-              <img class="cards__img" src="./images/dombay.jpg" alt="Домбай" />
-              <div class="cards__info">
-                <h2 class="cards__heading">Домбай</h2>
-                <button
-                  aria-label="Like"
-                  type="button"
-                  class="cards__like-button"
-                ></button>
-              </div>
-            </li>
-            <li class="cards__item">
-              <img
-                class="cards__img"
-                src="./images/gora_elbrus.jpg"
-                alt="Гора Эльбрус"
-              />
-              <div class="cards__info">
-                <h2 class="cards__heading">Гора Эльбрус</h2>
-                <button
-                  aria-label="Like"
-                  type="button"
-                  class="cards__like-button"
-                ></button>
-              </div>
-            </li>
-            <li class="cards__item">
-              <img class="cards__img" src="./images/dombay.jpg" alt="Домбай" />
-              <div class="cards__info">
-                <h2 class="cards__heading">Домбай</h2>
-                <button
-                  aria-label="Like"
-                  type="button"
-                  class="cards__like-button"
-                ></button>
-              </div>
-            </li>
-            <li class="cards__item">
-              <img
-                class="cards__img"
-                src="./images/karachaevsk.jpg"
-                alt="Карачаевск"
-              />
-              <div class="cards__info">
-                <h2 class="cards__heading">Карачаево-Черкеск</h2>
-                <button
-                  aria-label="Like"
-                  type="button"
-                  class="cards__like-button"
-                ></button>
-              </div>
-            </li>
+        <section class="cards js-cards">
+          <ul class="cards__grid js-cards__grid">
           </ul>
         </section>
       </main>
@@ -126,20 +46,19 @@
           &copy; 2022 Mesto Russia – Konstantin Baidak
         </p>
       </footer>
-      <section class="popup">
-        <div class="popup__container">
+      <section class="popup js-popup" id="popup1">
+        <div class="popup__container js-popup__container">
           <button
             aria-label="Close"
             type="reset"
-            class="popup__close"
+            class="popup__close js-popup__close"
           ></button>
-          <form name="edit__form" class="popup__form">
+          <form name="edit__form" class="popup__form js-popup__form">
             <h2 class="popup__heading">Редактировать профиль</h2>
             <fieldset class="popup__input-container">
               <input
                 class="popup__input"
                 type="text"
-                id="name"
                 name="name"
                 placeholder=""
                 required
@@ -147,13 +66,41 @@
               <input
                 class="popup__input"
                 type="text"
-                id="role"
                 name="role"
                 placeholder=""
                 required
               />
             </fieldset>
-            <button type="submit" class="popup__button">Сохранить</button>
+            <button type="submit" class="popup__button js-popup__button" data-type="editProfile">Сохранить</button>
+          </form>
+        </div>
+      </section>
+      <section class="popup js-popup" id="popup2">
+        <div class="popup__container js-popup__container">
+          <button
+            aria-label="Close"
+            type="reset"
+            class="popup__close js-popup__close"
+          ></button>
+          <form name="edit__form" class="popup__form">
+            <h2 class="popup__heading">Новое место</h2>
+            <fieldset class="popup__input-container">
+              <input
+                class="popup__input"
+                type="text"
+                name="name"
+                placeholder="Название"
+                required
+              />
+              <input
+                class="popup__input"
+                type="text"
+                name="link"
+                placeholder="Ссылка на картинку"
+                required
+              />
+            </fieldset>
+            <button type="submit" class="popup__button js-popup__button" data-type="createCard">Создать</button>
           </form>
         </div>
       </section>
