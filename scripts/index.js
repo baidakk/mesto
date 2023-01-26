@@ -1,32 +1,3 @@
-// Получаем массив
-
-const initialCards = [
-  {
-    name: "Архыз",
-    link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
-  },
-  {
-    name: "Челябинская область",
-    link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg",
-  },
-  {
-    name: "Иваново",
-    link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg",
-  },
-  {
-    name: "Камчатка",
-    link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg",
-  },
-  {
-    name: "Холмогорский район",
-    link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg",
-  },
-  {
-    name: "Байкал",
-    link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg",
-  },
-];
-
 //Данные по пользователю
 
 let innitialUserDate = {
@@ -51,7 +22,7 @@ const popupSubmitProfile = document.querySelector(
 const popupAddCard = document.querySelector(
   ".js-popup__button[data-type='createCard']"
 );
-const cardRemove = document.querySelector("js-cards__remove-button");
+
 
 //Передаем данные из профиля в попап
 
@@ -73,11 +44,20 @@ popupCloses.forEach((element) => {
   });
 });
 
+//Удаление карточки
+const trashCard = document.querySelector('.cards__remove');
+
+function deleteCard(e) {
+  const cardItem = e.target.closest('.card-item');
+  cardItem.remove();
+};
 
 //Слушаем кнопки на странице
 
 popupSubmitProfile.addEventListener("click", formSubmitHandler1);
 popupAddCard.addEventListener("click", formSubmitHandler2);
+
+//trashCard.addEventListener("click", deleteCard);
 
 cardsSection.addEventListener("click", (evt) => {
   //Выбираем клики по лайкам
@@ -131,6 +111,11 @@ function formSubmitHandler2(evt) {
   const targetLink = targetPopup.querySelector('input[name="link"]').value;
   const cardsSectionList = cardsSection.querySelector(".js-cards__grid");
   const cardTemplate = `<li class="cards__item">
+  <button 
+    aria-label="remove"
+    type="button"
+    class="cards__remove js-cards__remove-button">
+    </button>
   <img
     class="cards__img"
     src="${targetLink}"
@@ -150,7 +135,7 @@ function formSubmitHandler2(evt) {
 }
 
 
-// Как заполняется карточка?
+// Как заполняется попап?
 
 function fillForm(innitialUserDate, popup) {
   for (const key in innitialUserDate) {
